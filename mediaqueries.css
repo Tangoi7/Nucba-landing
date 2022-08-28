@@ -1,0 +1,68 @@
+@media (max-width:992px){
+    .catalogo{
+        text-align: center;
+        width: 90%;
+        align-items: center;
+    }
+
+    .catalogo h1{
+        display: block;
+        width: 100%;
+    }
+
+    .catalogo p{
+        max-width: 80%;
+        font-size: 16px;
+    }
+
+    .hombre-mujer{
+        justify-content: center;
+    }
+    
+    .suela-img{
+        display: none;
+    }
+
+    #segunda-portada{
+        font-size: 7px;
+    }
+}
+
+@media (max-width:576px){
+    .navbar ul{
+        background: rgb(7,0,122);
+        background: linear-gradient(3deg, rgba(7,0,122,1) 0%, rgba(66,66,80,1) 0%, rgba(44,44,51,1) 40%, rgba(27,27,36,1) 100%, rgba(6,6,82,1) 100%);
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.5s ease-out;
+    }
+
+    .navbar i{
+        display: block;
+    }
+
+    #toggle-menu:checked + .list{
+        display: flex;
+        transform: translateX(0%);
+        transition: all 0.5s ease-in;
+    }
+
+    .catalogo-suelas{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}

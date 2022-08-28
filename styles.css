@@ -39,6 +39,7 @@ header{
     padding: 0px 30px 0px 30px;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .logo{
@@ -53,6 +54,15 @@ header{
     text-decoration: none;
     color: rgb(223, 223, 223);
     font-weight: 700;
+}
+
+.navbar i{
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
 }
 
 nav ul{
@@ -80,7 +90,7 @@ main{
 
 #Portada{
     margin: 65px;
-    padding: 70px 0;
+    padding: 50px 0;
     max-width: 1200px;
     display: flex;
     align-items: center;
@@ -88,12 +98,17 @@ main{
 }
 
 #segunda-portada{
-    margin: 65px;
-    padding: 70px 0;
+    margin: 10px;
+    padding: 25px 0;
     max-width: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#segunda-portada p{
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .suela-img{
@@ -103,6 +118,13 @@ main{
 
 h1,a{
     color: var(--primary);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 700;
 }
 
 p{
@@ -116,22 +138,124 @@ p{
 
 .hombre-mujer{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 28px;
     gap: 25px;
 }
 
-button{
-    display: flex;
-    flex-direction: row;
-    padding: 16px 28px;
-    border: 7px solid var(--btn-bg);
-    cursor: pointer;
+.hombre-mujer a{
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-gray);
 }
 
 .cat{
-    background-color: var(--primary);
+    background: var(--primary);
     font-size: 25px;
+    border-radius: 30px;
+}
+
+.cards h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 0;
+}
+
+.cards h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 0;
+    color: var(--bg-electric)
+}
+
+
+.catalogo-suelas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.catalogo-suelas img{
+    width: 33%;
+}
+
+.cards-padre{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.icon{
+    width: 120px; 
+    height: 120px;
+}
+
+.info-cards{
+    width: 300px;
+    height: 300px;
+    padding: 40px 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(223, 223, 223, 0.825);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.info-cards h3{
+    font-size: 25px;
+    font-weight: 450;
+}
+
+.info-cards p{
+    color: #02050e;
+}
+
+footer{
+    width: 100%;
+    background: rgb(7,0,122);
+    background: linear-gradient(0deg, rgba(7,0,122,1) 0%, rgba(5,5,38,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 120px;
+    padding: 50px 0;
+}
+
+.footer-ayuda{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-ayuda a{
+    color: var(--text-gray);
+    font-weight: 500;
+    font-size: 25px;
+    font-weight: 450;
+}
+
+.icono-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icono-footer img{
+    width: 70px; 
+    height: 70px;
+    gap: 50px;
+    cursor: pointer;
+
 }
